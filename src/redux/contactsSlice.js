@@ -18,7 +18,7 @@ const contactsSlice = createSlice({
       prepare(value) {
         return {
           payload: {
-            value,
+            ...value,
             id: nanoid(),
           },
         };
