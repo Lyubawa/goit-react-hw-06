@@ -1,5 +1,6 @@
 import ContactForm from './components/ContactForm/ContactForm';
 import ContactList from './components/ContactList/ContactList';
+import SearchBox from './components/SearchBox/SearchBox';
 
 export default function App() {
   return (
@@ -7,6 +8,7 @@ export default function App() {
       <h1>Phonebook</h1>
       <ContactForm />
       <ContactList />
+      <SearchBox />
     </div>
   );
 }
