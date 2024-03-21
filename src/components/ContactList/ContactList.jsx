@@ -4,7 +4,7 @@ import css from './ContactList.module.css';
 
 export default function ContactList() {
   const contacts = useSelector(state => {
-    const filter = state.filters;
+    const filter = state.filters.text;
     if (filter) {
       return state.contacts.items.filter(contact =>
         contact.name.toLowerCase().includes(filter.toLowerCase())
